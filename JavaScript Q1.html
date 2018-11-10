@@ -1,0 +1,25 @@
+<html>
+   <head>
+     <title>body mass index</title>
+   </head>
+ <body>
+     <script>
+     var mass1=40, mass2=50;
+	 var height1=50, height2=60;
+	 
+	 document.write("Mass of Mark is:"+mass1+"<br/><br/>");
+	 document.write("height of Mark is:"+height1+"<br/><br/>");
+	 
+	 document.write("Mass of mark is:"+mass2+"<br/><br/>");
+	 document.write("Height of Mark is:"+height2+"<br/><br/>");
+	 
+	 document.write("BMI of mark is:"+(mass1/(height1*height1))+"<br/><br/>");
+	 document.write("BMI of john is:"+(mass2/(height2*height2))+"<br/><br/>");
+	 
+	 var message=((mass1/(height1*height1))>(mass2/(height2*height2)))?"TRUE":"FALSE";
+	 document.write("Is Marks's BMI higher than John's?"+"&nbsp&nbsp"+message);
+	 
+
+	 </script>
+  </body>
+</html>
