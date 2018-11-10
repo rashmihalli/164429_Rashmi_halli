@@ -1,20 +1,24 @@
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 * {
   box-sizing: border-box;
+background-color: lightyellow;
+} 
+img{
+filter: blur(1px);
 }
 .menu {
   float: left;
   width: 20%;
+  background-color: lightyellow;
 }
 .menuitem {
   padding: 8px;
   margin-top: 7px;
   border-bottom: 1px solid #f1f1f1;
 }
-.main { 
+.main {
   float: left;
   width: 60%;
   padding: 0 20px;
@@ -24,68 +28,66 @@
   background-color: lightblue;
   float: left;
   width: 20%;
-  padding: 10px 15px;
+  padding: 0px 20px ;
+  margin-left: 789px;
+  margin-top: -220px;
+  height:28%
+  
+}
+.bottom {
+  background-color: white;
+  float: left;
+  width: 60%;
+  padding:0 20px ;
   margin-top: 7px;
+  margin-left: -23px;
+  height:28%
 }
-
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-    width: 80%;
-    padding: 0;
-  }
-  .right {
-    width: 100%;
-  }
-}
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35;
+    background-color: white;
 }
 </style>
 </head>
-<body style="font-family:Verdana;">
-
-<div style="background-color:#f1f1f1;padding:15px;">
-  <h1>Newyork's best Pizza</h1>
-  <h3>Joe's Pizza.co</h3>
+<body>
+<div style ="padding:15px;">
+  <h1 style="color:green">Newyork's best Pizza</h1>
+  <h3 style="color:green">Joe's Pizza.co</h3>
 </div>
-
 <div style="overflow:auto">
   <div class="menu">
     <div class="menuitem">Home</div>
     <div class="menuitem">About</div>
     <div class="menuitem">News</div>
     <div class="menuitem">Menu</div>
-    <div class="menuitem">Locations</div>
-    <div class="menuitem">Bookings</div>
+    <div class="menuitem">Location</div>
+    <div class="menuitem">Bookings</div> 
   </div>
 
   <div class="main">
-    <h2>Welcome to Joes Pizza</h2>
-    <img src="pizzapic.jpg" width:"400" height="400">
-    <p>We pride ourselves on serving up the best pizza in New York City. 
-       Come and visit one of our family,friendly restaurents and take our wide range of authentic
-       italian pizza.<br>
-       Please visit our locations page for more details.</p>
+     <img src="pizzapic.jpg" style="width:700">
+     <div class="centered">NEW YORK'S BEST PIZZA</div>
+     <div class="bottom"><h2 style="background-color:white">Welcome to Joe's Pizza Co.</h2>
+      We pride ourselves on serving up the best pizzas in new york.C ome and visit one of our family-friendly restaurants and take a look at our wide range of aunthentic Italian pizzas. We can also deliver direct to your door with our speedy takeaway service.
+     <br><br><br>Please take a look at the locations page for more information about where you can find our fantastic restaurents.
+     </div>
   </div>
 
-  <div class="right">
-    <h2>Special offers</h2>
-    <p>10% Off All Pizza When You Eat Here.</p>
-    <p>20% Off Joe's Pepperoni Special with the promo code NYBESTPIZZA.</p>
+  <div class="right"  background color: "lightblue">
+    Special Offers <br><br>
+    10% off All pizza When You Eat iN!<br><br>
+    20% Off Joe's Pepperons Special With the promo code NYBESTPIZZA 
+    
+   The Walk is free!
   </div>
 </div>
+</body>
+</html>
 
-
-<div style="background-color:#f1f1f1;
-            text-align:center;
-            padding:10px;
-            margin-top:7px;
-            font-size:12px;"> 
-</div>
 
 </body>
 </html>
