@@ -1,31 +1,28 @@
-<!DOCTYPE html>
 <html>
+<head>
 <title>Slide show</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
 <body>
 <h2 align="center">Slideshow</h2>
+<div align="center">
+  <img class="my" src="image1.jpg" width="400" height="400">
+  <img class="my" src="image2.jpg" width="400" height="400">
+  <img class="my" src="image3.jpg" width="400" height="400">
 
-<div class="w3-content w3-display-container" align="center">
-  <img class="mySlides" src="image11.jpg" width="400" height="400">
-  <img class="mySlides" src="image22.jpg" width="400" height="400">
-  <img class="mySlides" src="image33.jpg" width="400" height="400">
-
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">prev</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">next</button>
+  <button onclick="plusDivs(-1)">prev</button>
+  <button onclick="plusDivs(1)">next</button>
 </div>
 
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
-
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
-
 function showDivs(n) {
   var i;
-  var x = document.getElementsByClassName("mySlides");
+  var x = document.getElementsByClassName("my");
   if (n > x.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
