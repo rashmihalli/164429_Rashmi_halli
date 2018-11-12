@@ -1,0 +1,54 @@
+<html>
+  <body>
+    Employee Name:<input type="text" id="name"/><br><br>
+	Employee Id:<input type="text" id="identity"/><br><br>
+	Employee salary:<input type="text" id="salary"/><br><br>
+	Employee Address:<input type="text" id="address"/><br><br>
+	Employee Mobile number:<input type="number" id="mobile"/><br><br>
+	Employee city:<input type="text" id="city"/><br><br>
+	Employee pin code:<input type="text" id="pin"/><br><br>
+	Employee email id:<input type="email" id="mail"/><br><br>
+	
+	<input type="button" value="save" id="save" onclick="save()"/>&nbsp&nbsp
+	<input type="button" value="restore" id="restore" onclick="restore()"/>&nbsp&nbsp
+	<input type="button" value="remove" id="restore" onclick="remove()"/>&nbsp&nbsp
+	
+	<script language="javascript" text="text/javascript">
+      
+	  
+	  function save()
+	  {
+	    localStorage.setItem("name", document.getElementById('name').value);
+		localStorage.setItem("identity", document.getElementById('identity').value);
+		localStorage.setItem("salary", document.getElementById('salary').value);
+		localStorage.setItem("address", document.getElementById('address').value);
+		localStorage.setItem("mobile", document.getElementById('mobile').value);
+		localStorage.setItem("city", document.getElementById('city').value);
+		localStorage.setItem("pin", document.getElementById('pin').value);
+		localStorage.setItem("mail", document.getElementById('mail').value);
+	  }
+	  function restore()
+	  {
+	    document.getElementById('name').value=localStorage.getItem("name");
+		document.getElementById('identity').value=localStorage.getItem("identity");
+		document.getElementById('salary').value=localStorage.getItem("salary");
+		document.getElementById('address').value=localStorage.getItem("address");
+		document.getElementById('mobile').value=localStorage.getItem("mobile");
+		document.getElementById('city').value=localStorage.getItem("city");
+		document.getElementById('pin').value=localStorage.getItem("pin");
+		document.getElementById('mail').value=localStorage.getItem("mail");
+	  }
+	  function remove()
+	  {
+	    document.getElementById('name').value=localStorage.removeItem("name");
+		document.getElementById('identity').value=localStorage.removeItem("identity");
+		document.getElementById('salary').value=localStorage.removeItem("salary");
+		document.getElementById('address').value=localStorage.removeItem("address");
+		document.getElementById('mobile').value=localStorage.removeItem("mobile");
+		document.getElementById('city').value=localStorage.removeItem("city");
+		document.getElementById('pin').value=localStorage.removeItem("pin");
+		document.getElementById('mail').value=localStorage.removeItem("mail");
+	  }
+	</script>
+  </body>
+</html>
