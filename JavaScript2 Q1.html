@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Java Assignment2 Question1</title>
+  </head>
+  <body>
+    <script>
+
+      var number=parseInt(prompt("Enter the number of products","Enter the Number"));
+      var index;
+
+      for(index=0; index<number; index++)
+      {
+        printalldetails();
+      }
+
+      function product()
+      {
+        productid = prompt("Enter Product ID","Enter ID");
+	productname = prompt("Enter Product Name","Enter name");
+	productprice = prompt("Enter Product Price","Enter Price");
+	productdescription = prompt("Enter The Product Description","Enter Description");
+      }
+
+      function printalldetails()
+      {
+        product();
+        console.log(productid);
+        console.log(productname);
+        console.log(productprice);
+        console.log(productdescription);
+      }	  
+    </script>
+  </body>
