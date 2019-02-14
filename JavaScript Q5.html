@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>JavaScript Assignment Question5</title>
+  </head>
+  <body>
+    <script>
+	  var bill = [124, 48, 264];
+	  var tip = new Array(3);
+	  var total = new Array(3);
+	  var l1 = tip.length;
+	  
+	  document.write("Length of Array is "+l1);
+	  document.write("<br>");
+	  document.write("<br>");
+	  
+	    for(i=0; i<l1; i++)
+	    {
+	      if(bill[i]<50)
+		  {
+		    tip1=bill[i]*0.2;
+			tip[i]=tip1;
+			total1= bill[i]+tip[i];
+			total[i]= total1;
+		  }
+		  else if(bill[i]>50 && bill[i]<200)
+		  {
+		    tip1=bill[i]*0.15;
+			tip[i]=tip1;
+			total1= bill[i]+tip[i];
+			total[i]= total1;
+		  }
+		  else
+		  {
+		    tip1=bill[i]*0.1;
+			tip[i]=tip1;
+			total1= bill[i]+tip[i];
+			total[i]= total1;
+		  }
+	    }
+		
+		
+		var a= total.length;
+		for(i =0; i<a; i++)
+		{
+		   document.write("Total="+total[i]+"<br><br>");
+		}
+		   
+		 var b= tip.length;
+		 for(i=0; i<b; i++)
+		 {
+		   document.write("Total Tip="+tip[i]+"<br><br>");
+		 }
+		 
+	</script>
+  </body>
+</html>
